@@ -13,8 +13,6 @@ vim.opt.colorcolumn = '80'
 vim.opt.scrolloff = 8
 
 -- Keymaps
-vim.keymap.set('n', '<C-j>', '15jz.')
-vim.keymap.set('n', '<C-k>', '15kz.')
 vim.keymap.set('n', '<leader>u', '<CMD>Telescope undo<CR>')
 vim.keymap.set('n', '<leader>cd', '<CMD>cd %:p:h<CR> <CMD>pwd<CR>')
 vim.keymap.set('n', '<leader>-', '<CMD>Explore<CR>')
