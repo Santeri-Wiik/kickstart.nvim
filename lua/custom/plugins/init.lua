@@ -41,6 +41,10 @@ vim.api.nvim_create_user_command('RE', function(...)
   end
 end, { nargs = '?', desc = '[R]ight [E]xplore' })
 
+if vim.g.neovide then
+  require 'custom.neovide'
+end
+
 -- Imports
 return {
   {
