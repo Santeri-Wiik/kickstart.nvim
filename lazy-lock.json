@@ -16,6 +16,8 @@
   "mini.icons": { "branch": "main", "commit": "54686be7d58807906cb2c8c2216e0bf9c044f19a" },
   "mini.nvim": { "branch": "main", "commit": "c8bc67a35e627908da644c5f8cd26b3f987f2627" },
   "nvim-lspconfig": { "branch": "master", "commit": "52302604e3c667cfdf33aadf89088e96eb3c5da3" },
+  "nvim-metals": { "branch": "main", "commit": "40f7b9ea6ded898319136f4d6a94da9487584309" },
+  "nvim-texlabconfig": { "branch": "master", "commit": "bac44e8e4dfe37fc4f4ffba86e144fe5da2322e4" },
   "nvim-treesitter": { "branch": "master", "commit": "b5cda6d731c949ce67812d80114f93253537faaf" },
   "nvim-treesitter-textobjects": { "branch": "master", "commit": "ad8f0a472148c3e0ae9851e26a722ee4e29b1595" },
   "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },
