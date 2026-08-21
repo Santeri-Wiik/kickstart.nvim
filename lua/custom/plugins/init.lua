@@ -13,11 +13,6 @@ vim.opt.scrolloff = 8
 vim.opt.jumpoptions = 'clean,stack'
 
 -- Keymaps
-vim.keymap.set('n', '<leader>u', '<CMD>Telescope undo<CR>')
-vim.keymap.set('n', '<leader>cd', '<CMD>cd %:p:h<CR> <CMD>pwd<CR>')
-vim.keymap.set('n', '<leader>-', '<CMD>Explore<CR>')
-vim.keymap.set('n', '<leader>fd', vim.diagnostic.open_float, { desc = 'Open diagnostic float' })
-
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'Move selection down' })
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move selection up' })
 vim.keymap.set('v', '<leader>p', '"_dP', { desc = '[P]ut over selection without yanking' })
