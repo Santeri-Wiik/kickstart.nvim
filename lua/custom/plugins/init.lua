@@ -25,6 +25,14 @@ vim.api.nvim_create_user_command('H', function(opts)
   vim.cmd 'vertical resize 95'
 end, { nargs = 1, desc = 'Help on the right' })
 
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'help',
+  callback = function()
+    vim.cmd.wincmd 'L'
+    vim.cmd 'vertical resize 95'
+  end,
+})
+
 vim.api.nvim_create_user_command('RE', function(...)
   vim.cmd 'vertical rightbelow split'
   vim.cmd 'vertical resize 95'
@@ -35,9 +43,7 @@ vim.api.nvim_create_user_command('RE', function(...)
   end
 end, { nargs = '?', desc = '[R]ight [E]xplore' })
 
-if vim.g.neovide then
-  require 'custom.neovide'
-end
+if vim.g.neovide then require 'custom.neovide' end
 
 -- Iterate over all Lua files in the plugins directory and load them
 local plugins_dir = vim.fs.joinpath(vim.fn.stdpath 'config', 'lua', 'custom', 'plugins')
