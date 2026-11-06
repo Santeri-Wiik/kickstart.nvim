@@ -18,6 +18,7 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move selection up' })
 vim.keymap.set('v', '<leader>p', '"_dP', { desc = '[P]ut over selection without yanking' })
 vim.keymap.set('v', '<leader>y', '"+y', { desc = '[Y]ank selection to system clipboard' })
 vim.keymap.set('v', '<leader>d', '"_d', { desc = '[D]elete selection without yanking' })
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { desc = 'Normal mode from terminal mode' })
 
 -- Commands
 vim.api.nvim_create_user_command('H', function(opts)
